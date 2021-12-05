@@ -19,17 +19,23 @@ function App() {
     },
 
     {
-        id: 1,
+        id: 3,
         text: 'Food Shopping',
         day: 'Feb 5th at 11:30 pm',
         reminder: true,
     },
 ])
 
+// Delete Task Function
+
+const deleteTask = (id) => {
+  setTasks(tasks.filter( (task) => task.id !== id ))
+}
+
   return (
     < div className="container">
       <Header/>
-      <Tasks tasks={tasks}/>
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : 'No Task to Show'}
     </div>
   );
 }
