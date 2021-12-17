@@ -4,19 +4,7 @@
       "id": 2,
       "text": "Metting at School",
       "day": "Feb 6th at 3:30 pm",
-      "reminder": true
-    },
-    {
-      "text": "take interview",
-      "day": "tommarow 12:20pm",
-      "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "react interview ",
-      "day": "18-Dec-2021, 3PM",
-      "reminder": true,
-      "id": 4
+      "reminder": false
     }
   ]
 }
